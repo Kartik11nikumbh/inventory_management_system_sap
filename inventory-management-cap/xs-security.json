@@ -1,0 +1,43 @@
+{
+  "xsappname": "inventory-management-cap",
+  "tenant-mode": "dedicated",
+
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.Admin",
+      "description": "Admin Access"
+    },
+    {
+      "name": "$XSAPPNAME.StoreManager",
+      "description": "Store Manager Access"
+    },
+    {
+      "name": "$XSAPPNAME.Employee",
+      "description": "Employee Access"
+    }
+  ],
+
+  "role-templates": [
+    {
+      "name": "Admin",
+      "description": "Administrator",
+      "scope-references": [
+        "$XSAPPNAME.Admin"
+      ]
+    },
+    {
+      "name": "StoreManager",
+      "description": "Store Manager",
+      "scope-references": [
+        "$XSAPPNAME.StoreManager"
+      ]
+    },
+    {
+      "name": "Employee",
+      "description": "Employee",
+      "scope-references": [
+        "$XSAPPNAME.Employee"
+      ]
+    }
+  ]
+}

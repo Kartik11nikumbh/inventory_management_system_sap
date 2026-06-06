@@ -1,0 +1,4 @@
+ID,materialCode,materialName,description,quantity,unitOfMeasure,reorderLevel,location,status
+11111111-1111-1111-1111-111111111111,MAT001,Laptop,Dell Laptop,50,EA,10,Store-A,Available
+22222222-2222-2222-2222-222222222222,MAT002,Keyboard,Wireless Keyboard,100,EA,20,Store-B,Available
+33333333-3333-3333-3333-333333333333,MAT003,Mouse,Optical Mouse,75,EA,15,Store-C,Available

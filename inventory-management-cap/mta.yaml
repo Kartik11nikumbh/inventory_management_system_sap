@@ -1,0 +1,186 @@
+_schema-version: 3.3.0
+ID: inventory-management-cap
+description: Inventory Management CAP Project
+version: 1.0.0
+modules:
+- name: inventory-management-cap-srv
+  type: nodejs
+  path: gen/srv
+  requires:
+  - name: inventory-management-cap-db
+  - name: inventory-management-cap-auth
+  provides:
+  - name: srv-api
+    properties:
+      srv-url: ${default-url}
+  parameters:
+    buildpack: nodejs_buildpack
+    instances: 1
+  build-parameters:
+    builder: npm-ci
+- name: inventory-management-cap-db-deployer
+  type: hdb
+  path: gen/db
+  requires:
+  - name: inventory-management-cap-db
+  parameters:
+    buildpack: nodejs_buildpack
+- name: inventory-management-cap-approuter
+  type: approuter.nodejs
+  path: app/router
+  properties:
+    ADDITIONAL_DESTINATIONS: |
+      [{"name":"ui5","url":"https://ui5.sap.com","forwardAuthToken":false}]
+  requires:
+  - name: srv-api
+    group: destinations
+    properties:
+      forwardAuthToken: true
+      name: srv-api
+      url: ~{srv-url}
+  - name: inventory-management-cap-auth
+  - name: inventory-management-cap-destination-service
+  - name: inventory-management-cap-repo-host
+  - name: inventory-management-cap-html5-runtime
+  parameters:
+    disk-quota: 256M
+    memory: 256M
+- name: inventory-management-cap-app-content
+  type: com.sap.application.content
+  path: .
+  requires:
+  - name: inventory-management-cap-repo-host
+    parameters:
+      content-target: true
+  build-parameters:
+    build-result: resources
+    requires:
+    - artifacts:
+      - cominventorymanagementmaterialmasterui.zip
+      name: cominventorymanagementmaterialmasterui
+      target-path: resources/
+    - artifacts:
+      - cominventorymanagementpurchaserequestui.zip
+      name: cominventorymanagementpurchaserequestui
+      target-path: resources/
+    - artifacts:
+      - cominventorymanagementmaterialissueui.zip
+      name: cominventorymanagementmaterialissueui
+      target-path: resources/
+    - artifacts:
+      - cominventorymanagementvendorquotationui.zip
+      name: cominventorymanagementvendorquotationui
+      target-path: resources/
+    - artifacts:
+      - cominventorymanagementgoodsreceiptui.zip
+      name: cominventorymanagementgoodsreceiptui
+      target-path: resources/
+- name: cominventorymanagementmaterialmasterui
+  type: html5
+  path: app/material-master-ui
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: cominventorymanagementpurchaserequestui
+  type: html5
+  path: app/purchase-request-ui
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: cominventorymanagementmaterialissueui
+  type: html5
+  path: app/material-issue-ui
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: cominventorymanagementvendorquotationui
+  type: html5
+  path: app/vendor-quotation-ui
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: cominventorymanagementgoodsreceiptui
+  type: html5
+  path: app/goods-receipt-ui
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+resources:
+- name: inventory-management-cap-db
+  type: com.sap.xs.hdi-container
+  parameters:
+    service: hana
+    service-plan: hdi-shared
+- name: inventory-management-cap-auth
+  type: org.cloudfoundry.managed-service
+  parameters:
+    path: ./xs-security.json
+    service: xsuaa
+    service-plan: application
+- name: inventory-management-cap-repo-host
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-name: inventory-management-cap-html5-service
+    service-plan: app-host
+- name: inventory-management-cap-html5-runtime
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-plan: app-runtime
+- name: inventory-management-cap-destination-service
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      HTML5Runtime_enabled: true
+      init_data:
+        instance:
+          destinations:
+          - Authentication: NoAuthentication
+            Name: ui5
+            ProxyType: Internet
+            Type: HTTP
+            URL: https://ui5.sap.com
+          - Authentication: NoAuthentication
+            HTML5.DynamicDestination: true
+            HTML5.ForwardAuthToken: true
+            Name: srv-api
+            ProxyType: Internet
+            Type: HTTP
+            URL: ~{srv-api/srv-url}
+          existing_destinations_policy: update
+      version: 1.0.0
+    service: destination
+    service-name: inventory-management-cap-destination-service
+    service-plan: lite
+  requires:
+  - name: srv-api
+parameters:
+  deploy_mode: html5-repo
+  enable-parallel-deployments: true
+build-parameters:
+  before-all:
+  - builder: custom
+    commands:
+    - npm ci
+    - npx cds build --production

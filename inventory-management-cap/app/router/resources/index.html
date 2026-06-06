@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <script
+        id="sap-ui-bootstrap"
+        src="https://sapui5.hana.ondemand.com/1.148.1/resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_horizon"
+        data-sap-ui-libs="sap.m,sap.f"
+        data-sap-ui-async="true"
+        data-sap-ui-on-init="onInit"
+        data-sap-ui-compat-version="edge"
+        data-sap-ui-frame-options="trusted">
+    </script>
+    <script>
+        function onInit() {
+            sap.ui.require(["sap/m/Shell", "sap/m/App", "sap/m/Page", "sap/m/TileContainer", "sap/m/StandardTile"], 
+            function(Shell, App, Page, TileContainer, StandardTile) {
+                var apps = [
+                    { title: "Material Master", icon: "sap-icon://product", url: "/materialmaster/index.html", info: "Manage Materials" },
+                    { title: "Purchase Request", icon: "sap-icon://cart", url: "/purchaserequest/index.html", info: "Manage Requests" },
+                    { title: "Vendor Quotation", icon: "sap-icon://supplier", url: "/vendorquotation/index.html", info: "Manage Quotations" },
+                    { title: "Goods Receipt", icon: "sap-icon://inbox", url: "/goodsreceipt/index.html", info: "Manage Receipts" },
+                    { title: "Material Issue", icon: "sap-icon://outbox", url: "/materialissue/index.html", info: "Manage Issues" }
+                ];
+                var tiles = apps.map(function(app) {
+                    return new StandardTile({
+                        title: app.title,
+                        icon: app.icon,
+                        info: app.info,
+                        press: function() { window.location.href = app.url; }
+                    });
+                });
+                var tc = new TileContainer({ tiles: tiles });
+                var page = new Page({ title: "Inventory Management System", content: [tc] });
+                var shell = new Shell({ app: new App({ pages: [page] }) });
+                shell.placeAt("content");
+            });
+        }
+    </script>
+</head>
+<body class="sapUiBody" id="content"></body>
+</html>

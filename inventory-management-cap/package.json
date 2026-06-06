@@ -1,0 +1,47 @@
+{
+  "name": "inventory-management-cap",
+  "version": "1.0.0",
+  "cds": {
+    "requires": {
+      "auth": {
+        "kind": "mocked"
+      }
+    }
+  },
+  "dependencies": {
+    "@cap-js/hana": "^2.8.0",
+    "@sap/cds": "^9",
+    "@sap/hana-client": "^2.28.21",
+    "@sap/xsenv": "^6.2.1",
+    "@sap/xssec": "^4.13.0"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2.4.0",
+    "@sap/cds-dk": "^9",
+    "cds-plugin-ui5": "^0.13.0",
+    "mbt": "^1.2.49",
+    "rimraf": "^5.0.5"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-material-master-ui": "cds watch --open com.inventorymanagement.materialmasterui/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "undeploy": "cf undeploy inventory-management-cap --delete-services --delete-service-keys --delete-service-brokers",
+    "build": "rimraf resources mta_archives && mbt build --mtar archive",
+    "deploy": "cf deploy mta_archives/archive.mtar --retries 1",
+    "watch-purchase-request-ui": "cds watch --open com.inventorymanagement.purchaserequestui/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-material-issue-ui": "cds watch --open com.inventorymanagement.materialissueui/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-vendor-quotation-ui": "cds watch --open com.inventorymanagement.vendorquotationui/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-goods-receipt-ui": "cds watch --open com.inventorymanagement.goodsreceiptui/index.html?sap-ui-xx-viewCache=false --livereload false"
+  },
+  "private": true,
+  "sapux": [
+    "app/material-master-ui",
+    "app/purchase-request-ui",
+    "app/material-issue-ui",
+    "app/vendor-quotation-ui",
+    "app/goods-receipt-ui"
+  ],
+  "workspaces": [
+    "app/*"
+  ]
+}

@@ -1,0 +1,3 @@
+ID,purchaseRequest_ID,receivedQuantity,invoiceNumber,receiptDate,receiptStatus
+aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa,66666666-6666-6666-6666-666666666666,20,INV1001,2026-06-05,Received
+bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb,77777777-7777-7777-7777-777777777777,15,INV1002,2026-06-05,Partial

@@ -1,0 +1,168 @@
+#2026 06 06 09:01:40.992#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12142#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:00:54.820286] Added process: "web" (STDOUT, API)#
+#2026 06 06 09:01:40.992#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12142#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:00:54.825836] Created app with guid cfed675d-eb34-40c8-8119-9e7b7625b7ab (STDOUT, API)#
+#2026 06 06 09:01:40.992#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12142#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:00:54.936987] Updating process: "web" (STDOUT, API)#
+#2026 06 06 09:01:40.992#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12142#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:00:55.009576] Scaling process: "web" (STDOUT, API)#
+#2026 06 06 09:01:40.992#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12142#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:23.207642] Uploading app package for app with guid cfed675d-eb34-40c8-8119-9e7b7625b7ab (STDOUT, API)#
+#2026 06 06 09:01:40.992#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12142#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:23.436944] Updated app with guid cfed675d-eb34-40c8-8119-9e7b7625b7ab ({"environment_variables"=>"[PRIVATE DATA HIDDEN]"}) (STDOUT, API)#
+#2026 06 06 09:01:40.992#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12142#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:31.177593] Creating build for app with guid cfed675d-eb34-40c8-8119-9e7b7625b7ab (STDOUT, API)#
+#2026 06 06 09:01:40.992#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12142#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:31.500691] Downloading nodejs_buildpack... (STDOUT, STG)#
+#2026 06 06 09:01:40.992#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12142#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:31.525685] Downloaded nodejs_buildpack (STDOUT, STG)#
+#2026 06 06 09:01:40.992#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12142#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:31.525750] Cell 4401fcd0-006d-4ceb-9b51-aa22a1b186cf creating container for instance e21933c1-274b-4c74-a45f-7b9a1d050dcc (STDOUT, STG)#
+#2026 06 06 09:01:40.992#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12142#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:32.307758] Security group rules were updated (STDOUT, STG)#
+#2026 06 06 09:01:40.992#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12142#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:32.419856] Cell 4401fcd0-006d-4ceb-9b51-aa22a1b186cf successfully created container for instance e21933c1-274b-4c74-a45f-7b9a1d050dcc (STDOUT, STG)#
+#2026 06 06 09:01:40.992#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12142#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:32.753505] Downloading app package... (STDOUT, STG)#
+#2026 06 06 09:01:40.992#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12142#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:35.975825] Downloaded app package (45.3M) (STDOUT, STG)#
+#2026 06 06 09:01:40.992#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12142#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:36.096529] -----> Nodejs Buildpack version 1.8.44 (STDOUT, STG)#
+#2026 06 06 09:01:40.992#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12142#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:36.653078] -----> Bootstrapping python (STDOUT, STG)#
+#2026 06 06 09:01:40.992#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12142#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:36.653092] -----> Installing python 3.11.14 (STDOUT, STG)#
+#2026 06 06 09:01:40.992#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12142#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:36.653203] Copy [/tmp/buildpacks/ee597f2be8090397/dependencies/b5e0345ae0ae1932e7d56fffaa49a487/python_3.11.14_linux_x64_cflinuxfs4_66f53248.tgz] (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:41.297977] -----> Installing binaries (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:41.298164] engines.node (package.json): >=20 (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:41.298173] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:41.298188] [31;1m**WARNING**[0m Dangerous semver range (>) in engines.node. See: http://docs.cloudfoundry.org/buildpacks/node/node-tips.html (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:41.298324] -----> Installing node 24.13.0 (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:41.298505] Copy [/tmp/buildpacks/ee597f2be8090397/dependencies/2f5692219fecc3eee6e6d507a6bfe7b9/node_24.13.0_linux_x64_cflinuxfs4_a816dee1.tgz] (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:44.021153] Using default npm version: 11.6.2 (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:44.021166] -----> Installing yarn 1.22.22 (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:44.021312] Copy [/tmp/buildpacks/ee597f2be8090397/dependencies/e3a39aedd1236924d69cc2d0637a8ed2/yarn_1.22.22_linux_noarch_any-stack_4911d0a6.tgz] (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:44.415348] Installed yarn 1.22.22 (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:44.415360] -----> Creating runtime environment (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:44.417416] NODE_ENV=production (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:44.417428] NODE_HOME=/tmp/contents3336317291/deps/0/node (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:44.417431] NODE_MODULES_CACHE=true (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:44.417433] NODE_VERBOSE=false (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:44.417436] NPM_CONFIG_LOGLEVEL=error (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:44.417438] NPM_CONFIG_PRODUCTION=true (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:44.417510] -----> Building dependencies (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:44.417519] Prebuild detected (node_modules already exists) (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:44.417529] Rebuilding any native modules (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:45.387221] rebuilt dependencies successfully (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:45.389010] npm notice (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:45.389020] npm notice New minor version of npm available! 11.6.2 -> 11.16.0 (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:45.389024] npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.16.0 (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:45.389027] npm notice To update run: npm install -g npm@11.16.0 (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:45.389031] npm notice (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:45.462829] Installing any new modules (package.json + package-lock.json) (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:46.378767] removed 12 packages in 836ms (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:46.379136] 27 packages are looking for funding (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:46.379222] run `npm fund` for details (STDOUT, STG)#
+#2026 06 06 09:01:51.014#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12146#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:01:47.594977] Contrast Security no credentials found. Will not write environment files. (STDOUT, STG)#
+#2026 06 06 09:02:11.093#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12158#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:04.251008] Exit status 0 (STDOUT, STG)#
+#2026 06 06 09:02:11.093#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12158#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:04.251065] Uploading droplet, build artifacts cache... (STDOUT, STG)#
+#2026 06 06 09:02:11.093#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12158#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:04.251115] Uploading droplet... (STDOUT, STG)#
+#2026 06 06 09:02:11.093#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12158#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:04.251145] Uploading build artifacts cache... (STDOUT, STG)#
+#2026 06 06 09:02:11.093#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12158#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:04.293199] Uploaded build artifacts cache (220B) (STDOUT, STG)#
+#2026 06 06 09:02:11.093#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12158#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:05.575346] Creating droplet for app with guid cfed675d-eb34-40c8-8119-9e7b7625b7ab (STDOUT, API)#
+#2026 06 06 09:02:21.062#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12162#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:10.685778] Uploaded droplet (98.3M) (STDOUT, STG)#
+#2026 06 06 09:02:21.062#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12162#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:10.723104] Uploading complete (STDOUT, STG)#
+#2026 06 06 09:02:21.062#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12162#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:11.628706] Cell 4401fcd0-006d-4ceb-9b51-aa22a1b186cf stopping instance e21933c1-274b-4c74-a45f-7b9a1d050dcc (STDOUT, STG)#
+#2026 06 06 09:02:21.062#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12162#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:11.628745] Cell 4401fcd0-006d-4ceb-9b51-aa22a1b186cf destroying container for instance e21933c1-274b-4c74-a45f-7b9a1d050dcc (STDOUT, STG)#
+#2026 06 06 09:02:21.062#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12162#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:11.686049] Staging complete for build e21933c1-274b-4c74-a45f-7b9a1d050dcc (STDOUT, API)#
+#2026 06 06 09:02:21.062#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12162#
+[PollStageAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:14.964989] Cell 4401fcd0-006d-4ceb-9b51-aa22a1b186cf successfully destroyed container for instance e21933c1-274b-4c74-a45f-7b9a1d050dcc (STDOUT, STG)#
+#2026 06 06 09:02:31.107#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12168#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:21.152846] Updated app with guid cfed675d-eb34-40c8-8119-9e7b7625b7ab ({:droplet_guid=>"4ea5ad7a-a663-40bf-9cf1-478701005bb9"}) (STDOUT, API)#
+#2026 06 06 09:02:31.107#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12168#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:21.370105] Creating revision for app with guid cfed675d-eb34-40c8-8119-9e7b7625b7ab (STDOUT, API)#
+#2026 06 06 09:02:31.107#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12168#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:21.401036] Starting app with guid cfed675d-eb34-40c8-8119-9e7b7625b7ab (STDOUT, API)#
+#2026 06 06 09:02:31.107#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12168#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:21.624913] Cell 1ea14514-f0fe-461c-9aa9-a53bbe093b00 creating container for instance 1c6a724a-bc89-400b-6f48-31cc (STDOUT, CELL)#
+#2026 06 06 09:02:31.107#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12168#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:22.390644] Security group rules were updated (STDOUT, CELL)#
+#2026 06 06 09:02:31.107#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12168#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:22.527032] Cell 1ea14514-f0fe-461c-9aa9-a53bbe093b00 successfully created container for instance 1c6a724a-bc89-400b-6f48-31cc (STDOUT, CELL)#
+#2026 06 06 09:02:31.107#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12168#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:23.527431] Downloading droplet... (STDOUT, CELL)#
+#2026 06 06 09:02:41.138#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12170#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:31.024194] Downloaded droplet (98.3M) (STDOUT, CELL)#
+#2026 06 06 09:02:41.138#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12170#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:31.024348] Starting health monitoring of container (STDOUT, CELL)#
+#2026 06 06 09:02:41.138#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12170#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:31.164606] Invoking pre-start scripts. (STDOUT, APP/PROC/WEB)#
+#2026 06 06 09:02:41.138#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12170#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:31.442941] Invoking start command. (STDOUT, APP/PROC/WEB)#
+#2026 06 06 09:02:41.138#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12170#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:31.980058] > inventory-management-cap@1.0.0 start (STDOUT, APP/PROC/WEB)#
+#2026 06 06 09:02:41.138#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12170#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:31.980080] > cds-serve (STDOUT, APP/PROC/WEB)#
+#2026 06 06 09:02:41.138#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12170#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:32.375896] {"level":"info","logger":"cds","timestamp":"2026-06-06T09:02:32.374Z","layer":"cds","component_type":"application","container_id":"10.32.1.5","component_id":"cfed675d-eb34-40c8-8119-9e7b7625b7ab","component_name":"inventory-management-cap-srv","component_instance":0,"source_instance":0,"organization_name":"4b4624aftrial","organization_id":"ad01a2b8-4d2a-484d-b7fa-3e9f30dccef1","space_name":"dev","space_id":"38b83465-43f6-4d88-83f2-f894fc82c03a","msg":"loaded model from 1 file(s):\n ","type":"log"} (STDOUT, APP/PROC/WEB)#
+#2026 06 06 09:02:41.138#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12170#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:32.376520] srv/csn.json (STDOUT, APP/PROC/WEB)#
+#2026 06 06 09:02:41.138#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12170#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:32.677943] {"level":"warn","logger":"@sap/hana-client","timestamp":"2026-06-06T09:02:32.677Z","layer":"cds","component_type":"application","container_id":"10.32.1.5","component_id":"cfed675d-eb34-40c8-8119-9e7b7625b7ab","component_name":"inventory-management-cap-srv","component_instance":0,"source_instance":0,"organization_name":"4b4624aftrial","organization_id":"ad01a2b8-4d2a-484d-b7fa-3e9f30dccef1","space_name":"dev","space_id":"38b83465-43f6-4d88-83f2-f894fc82c03a","msg":"When using @sap/hana-client, it's strongly recommended to adjust its thread pool size with environment variable `HDB_NODEJS_THREADPOOL_SIZE`, otherwise it might lead to performance issues.\nLearn more: https://help.sap.com/docs/SAP_HANA_CLIENT/f1b440ded6144a54ada97ff95dac7adf/31a8c93a574b4f8fb6a8366d2c758f21.html","type":"log"} (STDERR, APP/PROC/WEB)#
+#2026 06 06 09:02:41.138#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12170#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:32.695610] {"level":"info","logger":"cds","timestamp":"2026-06-06T09:02:32.694Z","layer":"cds","component_type":"application","container_id":"10.32.1.5","component_id":"cfed675d-eb34-40c8-8119-9e7b7625b7ab","component_name":"inventory-management-cap-srv","component_instance":0,"source_instance":0,"organization_name":"4b4624aftrial","organization_id":"ad01a2b8-4d2a-484d-b7fa-3e9f30dccef1","space_name":"dev","space_id":"38b83465-43f6-4d88-83f2-f894fc82c03a","msg":"connect to db > hana {\n  database_id: '25bee922-5c37-4180-a7be-366e74ca8905',\n  host: '25bee922-5c37-4180-a7be-366e74ca8905.hana.prod-ap21.hanacloud.ondemand.com',\n  port: '443',\n  driver: 'com.sap.db.jdbc.Driver',\n  url: 'jdbc:sap://25bee922-5c37-4180-a7be-366e74ca8905.hana.prod-ap21.hanacloud.ondemand.com:443?encrypt=true&validateCertificate=true&currentschema=B1DF0DDFD6C4485685ABA2C752507121',\n  schema: 'B1DF0DDFD6C4485685ABA2C752507121',\n  certificate: '...',\n  hdi_user: 'B1DF0DDFD6C4485685ABA2C752507121_EO6RZ6FVACEA6Y4H5I0U8BTJW_DT',\n  hdi_password: '...',\n  user: 'B1DF0DDFD6C4485685ABA2C752507121_EO6RZ6FVACEA6Y4H5I0U8BTJW_RT',\n  password: '...'\n}","type":"log"} (STDOUT, APP/PROC/WEB)#
+#2026 06 06 09:02:41.138#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12170#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:32.744814] {"level":"info","logger":"cds","timestamp":"2026-06-06T09:02:32.744Z","layer":"cds","component_type":"application","container_id":"10.32.1.5","component_id":"cfed675d-eb34-40c8-8119-9e7b7625b7ab","component_name":"inventory-management-cap-srv","component_instance":0,"source_instance":0,"organization_name":"4b4624aftrial","organization_id":"ad01a2b8-4d2a-484d-b7fa-3e9f30dccef1","space_name":"dev","space_id":"38b83465-43f6-4d88-83f2-f894fc82c03a","msg":"using auth strategy { kind: 'mocked' }","type":"log"} (STDOUT, APP/PROC/WEB)#
+#2026 06 06 09:02:41.138#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12170#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:32.778686] {"level":"info","logger":"cds","timestamp":"2026-06-06T09:02:32.778Z","layer":"cds","component_type":"application","container_id":"10.32.1.5","component_id":"cfed675d-eb34-40c8-8119-9e7b7625b7ab","component_name":"inventory-management-cap-srv","component_instance":0,"source_instance":0,"organization_name":"4b4624aftrial","organization_id":"ad01a2b8-4d2a-484d-b7fa-3e9f30dccef1","space_name":"dev","space_id":"38b83465-43f6-4d88-83f2-f894fc82c03a","msg":"serving InventoryService {\n  at: [ '/odata/v4/inventory' ],\n  decl: 'srv/csn.json:547'\n}","type":"log"} (STDOUT, APP/PROC/WEB)#
+#2026 06 06 09:02:41.138#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12170#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:32.790947] {"level":"info","logger":"cds","timestamp":"2026-06-06T09:02:32.790Z","layer":"cds","component_type":"application","container_id":"10.32.1.5","component_id":"cfed675d-eb34-40c8-8119-9e7b7625b7ab","component_name":"inventory-management-cap-srv","component_instance":0,"source_instance":0,"organization_name":"4b4624aftrial","organization_id":"ad01a2b8-4d2a-484d-b7fa-3e9f30dccef1","space_name":"dev","space_id":"38b83465-43f6-4d88-83f2-f894fc82c03a","msg":"server listening on { url: 'http://localhost:8080' }","type":"log"} (STDOUT, APP/PROC/WEB)#
+#2026 06 06 09:02:41.138#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12170#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:32.792729] {"level":"info","logger":"cds","timestamp":"2026-06-06T09:02:32.792Z","layer":"cds","component_type":"application","container_id":"10.32.1.5","component_id":"cfed675d-eb34-40c8-8119-9e7b7625b7ab","component_name":"inventory-management-cap-srv","component_instance":0,"source_instance":0,"organization_name":"4b4624aftrial","organization_id":"ad01a2b8-4d2a-484d-b7fa-3e9f30dccef1","space_name":"dev","space_id":"38b83465-43f6-4d88-83f2-f894fc82c03a","msg":"server v9.9.1 launched in 799 ms","type":"log"} (STDOUT, APP/PROC/WEB)#
+#2026 06 06 09:02:41.138#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12170#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:34.818530] Container became healthy (STDOUT, CELL)#
+#2026 06 06 09:02:41.138#Z#DEBUG#27448597-6186-11f1-b50e-eeee0a9aa125.inventory-management-cap-srv#flowable-async-job-executor-thread-12170#
+[PollStartAppStatusExecution] cfed675d-eb34-40c8-8119-9e7b7625b7ab [2026-06-06T09:02:34.854783] Process became ready with guid cfed675d-eb34-40c8-8119-9e7b7625b7ab payload: {"instance"=>"1c6a724a-bc89-400b-6f48-31cc", "index"=>0, "cell_id"=>"1ea14514-f0fe-461c-9aa9-a53bbe093b00", "ready"=>true, "version"=>"c940ace0-dc3b-4485-b6ba-afccf397a353"} (STDOUT, API)#
