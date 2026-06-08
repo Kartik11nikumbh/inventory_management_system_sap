@@ -2,20 +2,50 @@ using inventorymanagement from '../db/schema';
 
 service InventoryService {
 
-    entity User             as projection on inventorymanagement.User;
+    @restrict: [
+        { grant: '*', to: 'Admin' }
+    ]
+    entity User as projection on inventorymanagement.User;
 
     @odata.draft.enabled
-    entity MaterialMaster   as projection on inventorymanagement.MaterialMaster;
+    @restrict: [
+        { grant: '*', to: 'Admin' },
+        { grant: 'READ', to: 'StoreManager' },
+        { grant: 'READ', to: 'Employee' }
+    ]
+    entity MaterialMaster as projection on inventorymanagement.MaterialMaster;
 
     @odata.draft.enabled
-    entity MaterialIssue    as projection on inventorymanagement.MaterialIssue;
+    @restrict: [
+        { grant: '*', to: 'Admin' },
+        { grant: '*', to: 'StoreManager' },
+        { grant: ['READ','CREATE'], to: 'Employee' }
+    ]
+    entity MaterialIssue as projection on inventorymanagement.MaterialIssue;
 
     @odata.draft.enabled
-    entity PurchaseRequest  as projection on inventorymanagement.PurchaseRequest;
+    @restrict: [
+        { grant: '*', to: 'Admin' },
+        { grant: '*', to: 'StoreManager' },
+        { grant: 'READ', to: 'Employee' },
+        { grant: 'READ', to: 'Vendor' }
+    ]
+    entity PurchaseRequest as projection on inventorymanagement.PurchaseRequest;
 
     @odata.draft.enabled
-    entity VendorQuotation  as projection on inventorymanagement.VendorQuotation;
+    @restrict: [
+        { grant: '*', to: 'Admin' },
+        { grant: 'READ', to: 'StoreManager' },
+        { grant: 'READ', to: 'Employee' },
+        { grant: '*', to: 'Vendor' }
+    ]
+    entity VendorQuotation as projection on inventorymanagement.VendorQuotation;
 
     @odata.draft.enabled
-    entity GoodsReceipt     as projection on inventorymanagement.GoodsReceipt;
+    @restrict: [
+        { grant: '*', to: 'Admin' },
+        { grant: '*', to: 'StoreManager' },
+        { grant: 'READ', to: 'Employee' }
+    ]
+    entity GoodsReceipt as projection on inventorymanagement.GoodsReceipt;
 }

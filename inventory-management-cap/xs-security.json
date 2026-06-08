@@ -14,6 +14,10 @@
     {
       "name": "$XSAPPNAME.Employee",
       "description": "Employee Access"
+    },
+    {
+      "name": "$XSAPPNAME.Vendor",
+      "description": "Vendor Access"
     }
   ],
 
@@ -37,6 +41,13 @@
       "description": "Employee",
       "scope-references": [
         "$XSAPPNAME.Employee"
+      ]
+    },
+    {
+      "name": "Vendor",
+      "description": "Vendor",
+      "scope-references": [
+        "$XSAPPNAME.Vendor"
       ]
     }
   ]

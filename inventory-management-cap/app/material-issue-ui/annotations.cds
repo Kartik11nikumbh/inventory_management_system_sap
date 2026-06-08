@@ -14,7 +14,7 @@ annotate service.MaterialIssue with @(
     UI.LineItem : [
         {
             $Type : 'UI.DataField',
-            Value : material_ID,
+            Value : material,
             Label : 'Material'
         },
         {
@@ -38,7 +38,7 @@ annotate service.MaterialIssue with @(
         Data : [
             {
                 $Type : 'UI.DataField',
-                Value : material_ID,
+                Value : material,
                 Label : 'Material'
             },
             {
@@ -68,6 +68,8 @@ annotate service.MaterialIssue with @(
     ]
 );
 
+
+
 annotate service.MaterialIssue with @(
     Capabilities.InsertRestrictions : {
         Insertable : true
@@ -79,3 +81,30 @@ annotate service.MaterialIssue with @(
         Deletable : true
     }
 );
+annotate service.MaterialIssue with {
+
+    material @Common.ValueList : {
+        CollectionPath : 'MaterialMaster',
+        Parameters : [
+            {
+                $Type : 'Common.ValueListParameterInOut',
+                LocalDataProperty : material,
+                ValueListProperty : 'ID'
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'materialCode'
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'materialName'
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'quantity'
+            }
+        ]
+    };
+
+};
+
