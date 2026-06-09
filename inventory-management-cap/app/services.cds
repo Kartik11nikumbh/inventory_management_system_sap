@@ -8,3 +8,5 @@ using from './material-issue-ui/annotations';
 using from './vendor-quotation-ui/annotations';
 
 using from './goods-receipt-ui/annotations';
+
+using from './analytics-ui/annotations';

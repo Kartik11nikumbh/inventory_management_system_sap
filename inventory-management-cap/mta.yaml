@@ -75,6 +75,10 @@ modules:
       - cominventorymanagementgoodsreceiptui.zip
       name: cominventorymanagementgoodsreceiptui
       target-path: resources/
+    - artifacts:
+      - cominventorymanagementanalyticsui.zip
+      name: cominventorymanagementanalyticsui
+      target-path: resources/
 - name: cominventorymanagementmaterialmasterui
   type: html5
   path: app/material-master-ui
@@ -125,6 +129,16 @@ modules:
     - npm install
     - npm run build:cf
     supported-platforms: []
+- name: cominventorymanagementanalyticsui
+  type: html5
+  path: app/analytics-ui
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
 resources:
 - name: inventory-management-cap-db
   type: com.sap.xs.hdi-container
@@ -152,7 +166,7 @@ resources:
   type: org.cloudfoundry.managed-service
   parameters:
     config:
-      HTML5Runtime_enabled: true
+      HTML5Runtime_enabled: false
       init_data:
         instance:
           destinations:

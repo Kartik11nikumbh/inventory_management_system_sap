@@ -31,7 +31,8 @@
     "watch-purchase-request-ui": "cds watch --open com.inventorymanagement.purchaserequestui/index.html?sap-ui-xx-viewCache=false --livereload false",
     "watch-material-issue-ui": "cds watch --open com.inventorymanagement.materialissueui/index.html?sap-ui-xx-viewCache=false --livereload false",
     "watch-vendor-quotation-ui": "cds watch --open com.inventorymanagement.vendorquotationui/index.html?sap-ui-xx-viewCache=false --livereload false",
-    "watch-goods-receipt-ui": "cds watch --open com.inventorymanagement.goodsreceiptui/index.html?sap-ui-xx-viewCache=false --livereload false"
+    "watch-goods-receipt-ui": "cds watch --open com.inventorymanagement.goodsreceiptui/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-analytics-ui": "cds watch --open com.inventorymanagement.analyticsui/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "private": true,
   "sapux": [

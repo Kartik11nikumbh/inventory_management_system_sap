@@ -1,0 +1,147 @@
+<mvc:View
+    controllerName="com.inventorymanagement.analyticsui.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns:vizData="sap.viz.ui5.data"
+    xmlns:feeds="sap.viz.ui5.controls.common.feeds"
+    xmlns:l="sap.ui.layout"
+    displayBlock="true">
+
+    <Page title="📦 Inventory Analytics Dashboard" showHeader="true">
+        <content>
+
+            <!-- KPI Tiles -->
+            <HBox justifyContent="SpaceBetween" wrap="Wrap" class="sapUiSmallMargin">
+                <GenericTile header="Total Materials" subheader="In Master"
+                    class="sapUiSmallMarginEnd sapUiSmallMarginBottom" width="200px">
+                    <TileContent>
+                        <NumericContent value="{kpi>/totalMaterials}" icon="sap-icon://product"/>
+                    </TileContent>
+                </GenericTile>
+                <GenericTile header="Low Stock Alerts" subheader="Below Reorder Level"
+                    class="sapUiSmallMarginEnd sapUiSmallMarginBottom" width="200px">
+                    <TileContent>
+                        <NumericContent value="{kpi>/lowStock}" icon="sap-icon://alert" valueColor="Critical"/>
+                    </TileContent>
+                </GenericTile>
+                <GenericTile header="Pending Issues" subheader="Awaiting Approval"
+                    class="sapUiSmallMarginEnd sapUiSmallMarginBottom" width="200px">
+                    <TileContent>
+                        <NumericContent value="{kpi>/pendingIssues}" icon="sap-icon://pending" valueColor="Critical"/>
+                    </TileContent>
+                </GenericTile>
+                <GenericTile header="Pending Purchases" subheader="Purchase Requests"
+                    class="sapUiSmallMarginEnd sapUiSmallMarginBottom" width="200px">
+                    <TileContent>
+                        <NumericContent value="{kpi>/pendingPR}" icon="sap-icon://shopping-cart" valueColor="Critical"/>
+                    </TileContent>
+                </GenericTile>
+                <GenericTile header="Approved Issues" subheader="This Period"
+                    class="sapUiSmallMarginEnd sapUiSmallMarginBottom" width="200px">
+                    <TileContent>
+                        <NumericContent value="{kpi>/approvedIssues}" icon="sap-icon://accept" valueColor="Good"/>
+                    </TileContent>
+                </GenericTile>
+            </HBox>
+
+            <!-- Row 1: Stock Bar Chart + Issue Donut -->
+            <l:HorizontalLayout width="100%">
+                <Panel headerText="📊 Stock Levels vs Reorder Level"
+                    width="60%" class="sapUiSmallMargin">
+                    <viz:VizFrame id="stockChart"
+                        uiConfig="{applicationSet:'fiori'}"
+                        height="320px" width="100%" vizType="bar">
+                        <viz:dataset>
+                            <vizData:FlattenedDataset data="{stock>/items}">
+                                <vizData:dimensions>
+                                    <vizData:DimensionDefinition name="Material" value="{materialName}"/>
+                                </vizData:dimensions>
+                                <vizData:measures>
+                                    <vizData:MeasureDefinition name="Current Stock" value="{quantity}"/>
+                                    <vizData:MeasureDefinition name="Reorder Level" value="{reorderLevel}"/>
+                                </vizData:measures>
+                            </vizData:FlattenedDataset>
+                        </viz:dataset>
+                        <viz:feeds>
+                            <feeds:FeedItem uid="valueAxis" type="Measure" values="Current Stock,Reorder Level"/>
+                            <feeds:FeedItem uid="categoryAxis" type="Dimension" values="Material"/>
+                        </viz:feeds>
+                    </viz:VizFrame>
+                </Panel>
+
+                <Panel headerText="🔵 Material Issue Status"
+                    width="35%" class="sapUiSmallMargin">
+                    <viz:VizFrame id="issueChart"
+                        uiConfig="{applicationSet:'fiori'}"
+                        height="320px" width="100%" vizType="donut">
+                        <viz:dataset>
+                            <vizData:FlattenedDataset data="{issueStatus>/items}">
+                                <vizData:dimensions>
+                                    <vizData:DimensionDefinition name="Status" value="{status}"/>
+                                </vizData:dimensions>
+                                <vizData:measures>
+                                    <vizData:MeasureDefinition name="Count" value="{count}"/>
+                                </vizData:measures>
+                            </vizData:FlattenedDataset>
+                        </viz:dataset>
+                        <viz:feeds>
+                            <feeds:FeedItem uid="size" type="Measure" values="Count"/>
+                            <feeds:FeedItem uid="color" type="Dimension" values="Status"/>
+                        </viz:feeds>
+                    </viz:VizFrame>
+                </Panel>
+            </l:HorizontalLayout>
+
+            <!-- Row 2: PR Status Donut + Low Stock Table -->
+            <l:HorizontalLayout width="100%">
+                <Panel headerText="🛒 Purchase Request Status"
+                    width="35%" class="sapUiSmallMargin">
+                    <viz:VizFrame id="prChart"
+                        uiConfig="{applicationSet:'fiori'}"
+                        height="280px" width="100%" vizType="donut">
+                        <viz:dataset>
+                            <vizData:FlattenedDataset data="{prStatus>/items}">
+                                <vizData:dimensions>
+                                    <vizData:DimensionDefinition name="Status" value="{status}"/>
+                                </vizData:dimensions>
+                                <vizData:measures>
+                                    <vizData:MeasureDefinition name="Count" value="{count}"/>
+                                </vizData:measures>
+                            </vizData:FlattenedDataset>
+                        </viz:dataset>
+                        <viz:feeds>
+                            <feeds:FeedItem uid="size" type="Measure" values="Count"/>
+                            <feeds:FeedItem uid="color" type="Dimension" values="Status"/>
+                        </viz:feeds>
+                    </viz:VizFrame>
+                </Panel>
+
+                <Panel headerText="🔴 Low Stock Alerts"
+                    width="60%" class="sapUiSmallMargin">
+                    <Table items="{lowStock>/items}">
+                        <columns>
+                            <Column><Text text="Material Name"/></Column>
+                            <Column><Text text="Code"/></Column>
+                            <Column><Text text="Current Stock"/></Column>
+                            <Column><Text text="Reorder Level"/></Column>
+                            <Column><Text text="Location"/></Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Text text="{lowStock>materialName}"/>
+                                    <Text text="{lowStock>materialCode}"/>
+                                    <ObjectNumber number="{lowStock>quantity}" state="Error"/>
+                                    <Text text="{lowStock>reorderLevel}"/>
+                                    <Text text="{lowStock>location}"/>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </Panel>
+            </l:HorizontalLayout>
+
+        </content>
+    </Page>
+</mvc:View>

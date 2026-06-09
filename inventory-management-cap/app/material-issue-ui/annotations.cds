@@ -5,16 +5,14 @@ annotate service.MaterialIssue with @(
         TypeName : 'Material Issue',
         TypeNamePlural : 'Material Issues'
     },
-
     UI.SelectionFields : [
         issueStatus,
         requestedQuantity
     ],
-
     UI.LineItem : [
         {
             $Type : 'UI.DataField',
-            Value : material,
+            Value : material.materialName,
             Label : 'Material'
         },
         {
@@ -33,12 +31,11 @@ annotate service.MaterialIssue with @(
             Label : 'Remarks'
         }
     ],
-
     UI.FieldGroup #General : {
         Data : [
             {
                 $Type : 'UI.DataField',
-                Value : material,
+                Value : material_ID,
                 Label : 'Material'
             },
             {
@@ -58,7 +55,6 @@ annotate service.MaterialIssue with @(
             }
         ]
     },
-
     UI.Facets : [
         {
             $Type : 'UI.ReferenceFacet',
@@ -67,8 +63,6 @@ annotate service.MaterialIssue with @(
         }
     ]
 );
-
-
 
 annotate service.MaterialIssue with @(
     Capabilities.InsertRestrictions : {
@@ -81,30 +75,33 @@ annotate service.MaterialIssue with @(
         Deletable : true
     }
 );
+
 annotate service.MaterialIssue with {
-
-    material @Common.ValueList : {
-        CollectionPath : 'MaterialMaster',
-        Parameters : [
-            {
-                $Type : 'Common.ValueListParameterInOut',
-                LocalDataProperty : material,
-                ValueListProperty : 'ID'
-            },
-            {
-                $Type : 'Common.ValueListParameterDisplayOnly',
-                ValueListProperty : 'materialCode'
-            },
-            {
-                $Type : 'Common.ValueListParameterDisplayOnly',
-                ValueListProperty : 'materialName'
-            },
-            {
-                $Type : 'Common.ValueListParameterDisplayOnly',
-                ValueListProperty : 'quantity'
-            }
-        ]
-    };
-
+    material @(
+        Common.Text : material.materialName,
+        Common.TextArrangement : #TextOnly,
+        Common.ValueListWithFixedValues : false,
+        Common.ValueList : {
+            CollectionPath : 'MaterialMaster',
+            Parameters : [
+                {
+                    $Type : 'Common.ValueListParameterInOut',
+                    LocalDataProperty : material_ID,
+                    ValueListProperty : 'ID'
+                },
+                {
+                    $Type : 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty : 'materialCode'
+                },
+                {
+                    $Type : 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty : 'materialName'
+                },
+                {
+                    $Type : 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty : 'quantity'
+                }
+            ]
+        }
+    );
 };
-
