@@ -1,0 +1,7 @@
+<mvc:View
+    controllerName="com.inventorymanagement.analyticsui.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    displayBlock="true">
+    <html:div id="dashboardRoot" style="width:100%;min-height:100vh;box-sizing:border-box;background:#f5f6f7;"></html:div>
+</mvc:View>
