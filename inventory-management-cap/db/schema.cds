@@ -2,9 +2,7 @@ namespace inventorymanagement;
 
 using { cuid, managed } from '@sap/cds/common';
 
-/* =========================
-   User Management
-   ========================= */
+
 
 entity User : cuid, managed {
     userName    : String(50);
@@ -13,9 +11,7 @@ entity User : cuid, managed {
     role        : String(30);      // Admin, StoreManager, Employee
 }
 
-/* =========================
-   Material Master
-   ========================= */
+
 
 entity MaterialMaster : cuid, managed {
     materialCode      : String(20);
@@ -28,9 +24,6 @@ entity MaterialMaster : cuid, managed {
     status            : String(20);
 }
 
-/* =========================
-   Material Issue
-   ========================= */
 
 entity MaterialIssue : cuid, managed {
     material          : Association to MaterialMaster;
@@ -43,9 +36,7 @@ entity MaterialIssue : cuid, managed {
     remarks           : String(255);
 }
 
-/* =========================
-   Purchase Request
-   ========================= */
+
 
 entity PurchaseRequest : cuid, managed {
     material          : Association to MaterialMaster;
@@ -57,9 +48,6 @@ entity PurchaseRequest : cuid, managed {
     remarks           : String(255);
 }
 
-/* =========================
-   Vendor Quotation
-   ========================= */
 
 entity VendorQuotation : cuid, managed {
     purchaseRequest   : Association to PurchaseRequest;
@@ -73,9 +61,6 @@ entity VendorQuotation : cuid, managed {
     quotationStatus   : String(20);
 }
 
-/* =========================
-   Goods Receipt
-   ========================= */
 
 entity GoodsReceipt : cuid, managed {
     purchaseRequest   : Association to PurchaseRequest;

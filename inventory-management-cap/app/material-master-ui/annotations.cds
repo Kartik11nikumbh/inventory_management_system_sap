@@ -35,5 +35,41 @@ annotate service.MaterialMaster with @(
 
     Capabilities.DeleteRestrictions : {
         Deletable : true
-    }
+    },
+
+    UI.FieldGroup #GeneralInfo : {
+        $Type : 'UI.FieldGroupType',
+        Label : 'General Information',
+        Data  : [
+            { Value : materialCode },
+            { Value : materialName },
+            { Value : status },
+            { Value : location }
+        ]
+    },
+
+    UI.FieldGroup #StockInfo : {
+        $Type : 'UI.FieldGroupType',
+        Label : 'Stock Information',
+        Data  : [
+            { Value : quantity },
+            { Value : unitOfMeasure },
+            { Value : reorderLevel }
+        ]
+    },
+
+    UI.Facets : [
+        {
+            $Type  : 'UI.ReferenceFacet',
+            ID     : 'GeneralInfoFacet',
+            Label  : 'General Information',
+            Target : '@UI.FieldGroup#GeneralInfo'
+        },
+        {
+            $Type  : 'UI.ReferenceFacet',
+            ID     : 'StockInfoFacet',
+            Label  : 'Stock Information',
+            Target : '@UI.FieldGroup#StockInfo'
+        }
+    ]
 );

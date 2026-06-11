@@ -1,3 +1,39 @@
-.sapMGT {
+.dashboardPage {
+    background-color: #f5f6f7;
+}
+
+.kpiSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    justify-content: flex-start;
+}
+
+.kpiTile {
     min-width: 180px;
+    flex: 1 1 180px;
+    max-width: 220px;
+}
+
+.chartRow {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 0 16px 16px 16px;
+    align-items: flex-start;
+}
+
+.chartPanelLarge {
+    flex: 3;
+    min-width: 0;
+}
+
+.chartPanelSmall {
+    flex: 2;
+    min-width: 0;
+}
+
+.sapMPanel {
+    width: 100% !important;
 }
